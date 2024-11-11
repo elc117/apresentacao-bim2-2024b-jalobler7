@@ -73,6 +73,20 @@ public int countMembers() {
 
 Desse modo quando o Main é rodado, é feita a instância das 3 classes e também feita a chamada dos métodos, trazendo assim então a saída que o exercício dava como correta.
 
+## Refletindo sobre o código:
+
+### Você consegue identificar alguma redundância nos códigos (dentro de uma mesma classe ou em classes diferentes)?
+
+Na minha análise eu destaquei que é possível perceber que seria possível existir uma superclasse `pessoa` e que as classes professor e estudante herdassem ela, afinal existem atributos que ambos possuem como `name` e `UserId` e seus respectivos Getters e Setters que se repetem desnecessariamente.
+
+### O que aconteceria se fosse necessário armazenar outros atributos sobre estudantes e professores? (por exemplo, CPF, data de nascimento, telefone, etc?)
+
+Supondo que tanto professor quanto estudante receberiam esses atributos, o código ficaria ainda mais redundante, a solução para tal caso ao meu ver seria implementar uma superclasse `pessoa` que já tivesse esses atributos e seus respectivos métodos getter e setter.
+
+### O que aconteceria na classe Group se tivéssemos outras categorias de membros além de estudantes e professores (técnicos, administradores, etc.)?
+
+
+
 
 
 
