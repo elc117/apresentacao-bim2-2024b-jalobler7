@@ -85,7 +85,7 @@ Supondo que tanto professor quanto estudante receberiam esses atributos, o códi
 
 ### O que aconteceria na classe Group se tivéssemos outras categorias de membros além de estudantes e professores (técnicos, administradores, etc.)?
 
-
+Se a classe Group fosse expandida para incluir outras categorias de membros como técnicos e administradores, haveria um aumento da complexidade no código. Atualmente, `Group` possui métodos específicos para adicionar `Student` e `Professor` `(addMember(Student s) e addMember(Professor p))`, e mantém listas separadas para cada tipo de membro. Isso não escalaria bem com mais categorias de membros, e resultaria em código mais difícil de manter, com maior redundância e complexidade, afinal teriam de ser criados cada vez mais métodos com a mesma função.
 
 
 
