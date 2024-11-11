@@ -69,6 +69,10 @@ public int countMembers() {
     }
 ~~~
 
+![image](https://github.com/user-attachments/assets/490afaba-8ea2-4e56-847c-45c2dba19c7a)
+
+Desse modo quando o Main é rodado, é feita a instância das 3 classes e também feita a chamada dos métodos, trazendo assim então a saída que o exercício dava como correta.
+
 
 
 
