@@ -58,6 +58,23 @@ public boolean userExists(String userId) {
 ~~~
 
 Um método que foi implementado da seguinte forma ele percorre a lista de alunos ou de professores e então em cada uma das iterações ele verifica a condição, é chamado o método `getUserId` (que é publico) para
-decobrir qual id esta relacionado à aquele estudante/professor e o `equals` faz como que ele seja comparado com o `userId` passado como paramêtro, caso seja verdadeiro retorna `true` caso não esteja na lista retorna `false`
+decobrir qual id esta relacionado à aquele estudante/professor e o `equals` faz como que ele seja comparado com o `userId` passado como paramêtro, caso seja verdadeiro retorna `true` caso não esteja na lista retorna `false`.
+
+Para implementar o método countMembers não foi complicado também, o método `.size` retorna o tamanho de um array em java dessa forma como o método serve para retornar a quantidade total de pessoas no grupo o código fica dessa forma:
+
+~~~
+public int countMembers() {
+        
+        return students.size() + professors.size();
+    }
+~~~
+
+
+
+
+### Referências:
+
+* https://www.dio.me/articles/o-uso-do-arraylist-em-java
+* https://www.dio.me/articles/equals-em-java-compreendendo-e-implementando-a-comparacao-de-objetos
 
 
