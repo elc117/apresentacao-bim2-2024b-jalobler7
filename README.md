@@ -12,3 +12,52 @@ Analisando rapidamente é possível perceber que o diagrama nos apresenta um sis
   
 Sendo a última classe citada a que se relaciona com as 2 primeiras como indicado pelo "has-a"
 
+### Completando o código
+
+O exercício pedia que fosse completado dois métodos que estavam definidos na classe `group`
+
+Primeramente o método `userExists` 
+~~~
+public boolean userExists(String userId) {
+    // COMPLETE-ME
+    // Verifique se existe o userId na lista de estudantes ou de professores
+    // Veja no método anterior como percorrer as listas de estudantes e professores
+
+  }
+~~~
+
+E seguidamente o método `countMembers`
+~~~
+public int countMembers() {
+    // COMPLETE-ME
+    // Retorne o total de membros do grupo (estudantes e professores)
+    // Para isso, descubra qual método chamar para obter o tamanho de um ArrayList
+  }
+~~~
+
+Completando primeiramente o método `userExists`, implementar ele foi bem simples:
+
+~~~
+public boolean userExists(String userId) {
+
+        for (Student student : students) {
+            if (student.getUserId().equals(userId)) {
+                return true;
+            }
+        }
+
+        for (Professor professor : professors) {
+            if (professor.getUserId().equals(userId)) {
+                return true;
+            }
+        }
+        
+        return false;
+
+    }
+~~~
+
+Um método que foi implementado da seguinte forma ele percorre a lista de alunos ou de professores e então em cada uma das iterações ele verifica a condição, é chamado o método `getUserId` (que é publico) para
+decobrir qual id esta relacionado à aquele estudante/professor e o `equals` faz como que ele seja comparado com o `userId` passado como paramêtro, caso seja verdadeiro retorna `true` caso não esteja na lista retorna `false`
+
+
